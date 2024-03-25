@@ -1,6 +1,27 @@
 import React from 'react';
 
 const ImageGalleryApp = () => {
+    // Initializing, destructuring and updating States
+
+
+    // Defining Methods
+    const fetchData = async () => {
+        try {
+            const dataURL = "";
+            const keyAPI = "";
+
+            const response = await fetch(dataURL);
+            if (!response.ok) {
+                throw new Error(response.status);
+            }
+        } catch (err) {
+            console.error("Data Fetching Erro: ", err);
+        }
+    }
+
+
+
+    // Rerender in UI
     return (
         <>
             <div className="app-container">
@@ -26,6 +47,34 @@ const ImageGalleryApp = () => {
                     </div>
 
                     <div className="show-all-images">
+                        <section class="card">
+                            <figure>
+                                <img src="image.jpg" alt="Card Image" />
+                                <figcaption class="title">Card Title</figcaption>
+                            </figure>
+                        </section>
+
+                        <section class="card">
+                            <figure>
+                                <img src="image.jpg" alt="Card Image" />
+                                <figcaption class="title">Card Title</figcaption>
+                            </figure>
+                        </section>
+
+                        <section class="card">
+                            <figure>
+                                <img src="image.jpg" alt="Card Image" />
+                                <figcaption class="title">Card Title</figcaption>
+                            </figure>
+                        </section>
+
+                        <section class="card">
+                            <figure>
+                                <img src="image.jpg" alt="Card Image" />
+                                <figcaption class="title">Card Title</figcaption>
+                            </figure>
+                        </section>
+
                         <section class="card">
                             <figure>
                                 <img src="image.jpg" alt="Card Image" />
